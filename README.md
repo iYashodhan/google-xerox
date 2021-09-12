@@ -1,4 +1,4 @@
-This is Google Clone. 
+This is a Google Clone. 
 
 ## What Technologies?
 
