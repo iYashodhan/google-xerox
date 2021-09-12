@@ -8,8 +8,8 @@
     }
 
     .btn {
-        @apply p-2 rounded-md bg-gray-50 focus:outline-none
-        hover:shadow-md;
+        @apply p-2 rounded-md bg-gray-100 focus:outline-none
+        hover:shadow-md text-sm;
     }
 
 }
