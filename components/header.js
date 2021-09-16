@@ -1,8 +1,12 @@
 import Image from 'next/image'
-import { SearchIcon, MicrophoneIcon, XIcon, BookmarkIcon, NewspaperIcon, VideoCameraIcon, DotsVerticalIcon, CogIcon, ViewGridIcon } from '@heroicons/react/outline'
+import { SearchIcon, MicrophoneIcon, XIcon } from '@heroicons/react/outline'
+
+
 import { useRouter } from 'next/dist/client/router';
 import { useRef } from 'react';
 import Avatar from '../components/avatar';
+
+import HeaderOptions from '../components/HeaderOptions'
 
 function Header() {
 
@@ -55,6 +59,8 @@ function Header() {
                 <Avatar url="https://avatars.githubusercontent.com/u/81512294?s=60&v=4" className="ml-auto" />
 
             </div>
+
+            <HeaderOptions />
 
         </header>
 
