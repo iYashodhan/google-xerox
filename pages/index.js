@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useRef } from 'react'
-import { useRouter } from 'next/dist/client/router'
-
 import Avatar from '../components/avatar'
 import Footer from '../components/footer'
 
+import { useRef } from 'react'
+import { useRouter } from 'next/dist/client/router'
 import { ViewGridIcon } from '@heroicons/react/solid'
 import { SearchIcon, MicrophoneIcon } from '@heroicons/react/outline'
 
@@ -24,10 +23,6 @@ export default function Home() {
     router.push(`search?term=${term}`)
 
   };
-
-  
-
-
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
@@ -66,7 +61,7 @@ export default function Home() {
         src="https://cdn.pixabay.com/photo/2015/09/14/04/19/
         google-939112_960_720.png"
         width={300}
-        height={100}
+        height={100} alt="google image"
         />
 
         <div className="flex w-full items-center mt-5 px-5 py-3 max-w-md rounded-full hover:shadow-lg 
@@ -82,10 +77,9 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col w-1/2 space-y-2 justify-center mt-8
-      md:flex-row md:space-x-4 md:space-y-0   
-      ">
+        md:flex-row md:space-x-4 md:space-y-0">
         <button className="btn" onClick={search}>Google Search</button>
-        <button className="btn" onClick={search}>I'm feeling lucky</button>
+        <button className="btn" onClick={search}>Im feeling lucky</button>
 
       </div>
 
